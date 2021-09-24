@@ -40,9 +40,6 @@ f=-fs/2:Df:fs/2-Df;  % eje de frecuencia OFDM
 
 %% ************ Respuesta del canal UAC ********************
 [H,h]=RespuestaUAC(fmin,fmax,100,wTx,wRx,w,pmax, dib);
-% load('UACresponse') %canal modelado con sep Tx-Rx de 100 m
-h=UAC.h;
-H=UAC.H;
 ret=length(h)-1;
 
 % Estimación del FEQ e índice retardo inicial respuesta impulsiva (sincro)

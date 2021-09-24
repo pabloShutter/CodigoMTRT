@@ -1,0 +1,22 @@
+% ---------------------------------------------------------------------
+% Librería TTSCLib_RS
+% ---------------------------------------------------------------------
+% Funciones para simulación de un sistema con codificacion Reed-Solomon
+% ---------------------------------------------------------------------
+
+% --------------------------------------------------------
+% Universidad de Málaga. Dpto. Ingeniería de Comunicaciones 
+% 21-5-2021 Francisco Javier Cañete Corripio
+% 	Se editan y modifican las rutinas
+% --------------------------------------------------------
+% Universidad de Málaga. Dpto. Ingeniería de Comunicaciones 
+% 18-5-2020 Francisco Javier Cañete Corripio y 
+% 	    Francisco Javier Martín Vega
+% 	Se editan y modifican las rutinas
+% --------------------------------------------------------
+% Universidad de Málaga. Dpto. Ingeniería de Comunicaciones 
+% 16-5-2018   José Tomás Entrambasaguas
+% 	Añadida función 'compruebaParametrosRS'
+% 18-5-2016   José Tomás Entrambasaguas
+% 	Corregida  canalGF  (a veces generaba menos errores)
+% --------------------------------------------------------

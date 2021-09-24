@@ -1,0 +1,20 @@
+% ---------------------------------------------------------------------
+% Librería TTSCLib_conv
+% ---------------------------------------------------------------------
+% Funciones para simulación de un sistema con codificacion convolucional
+% ---------------------------------------------------------------------
+
+--------------------------------------------------------
+% Universidad de Málaga. Dpto. Ingeniería de Comunicaciones 
+% 21-5-2021 Francisco Javier Cañete Corripio
+% Se editan y modifican las rutinas
+% --------------------------------------------------------
+% Universidad de Málaga. Dpto. Ingeniería de Comunicaciones 
+% 18-5-2020 Francisco Javier Cañete Corripio y 
+% 	    Francisco Javier Martín Vega
+% Se cambia la realización de entrelazado
+% Se editan y modifican todas las rutinas
+% --------------------------------------------------------
+% Universidad de Málaga. Dpto. Ingeniería de Comunicaciones 
+% 31-5-2016  José Tomás Entrambasaguas
+% --------------------------------------------------------

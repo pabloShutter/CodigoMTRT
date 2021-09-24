@@ -13,12 +13,12 @@ close all;
 clc
 path(path,'Library')
 % Añadir el path con la libreria de Reed-Solomon al workspace
-path(path,'../TTSClib_RS')
+path(path,'Library/TTSClib_RS')
 % Añadir el path con la libreria de codificacion convolucional al workspace
-path(path,'../TTSClib_conv')
+path(path,'Library/TTSClib_conv')
 % Añadir el path con la librería de la rutina commcnv_plotnextstates para
 % diagrama de trellis
-addpath 'C:\Users\pablo\Documents\MATLAB\Examples\R2019b\comm\CreateUserDefinedTrellisStructureExample'
+% addpath 'C:\Users\pablo\Documents\MATLAB\Examples\R2019b\comm\CreateUserDefinedTrellisStructureExample'
 
 % Parametros sistema: 
 % -------------------------------------------------------------------------
@@ -130,8 +130,8 @@ if tipoRuido~=0 && length(ssnrdB)>1
         'bber_m - SNRb')
 end
 
-if recursivo
-   % Representacion diagrama de trellis
-    commcnv_plotnextstates(trellisEnc.nextStates) 
-end
+% if recursivo
+%    % Representacion diagrama de trellis
+%     commcnv_plotnextstates(trellisEnc.nextStates) 
+% end
 

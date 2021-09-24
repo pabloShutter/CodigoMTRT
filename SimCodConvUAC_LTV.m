@@ -13,12 +13,9 @@ close all;
 clc
 path(path,'Library')
 % Añadir el path con la libreria de Reed-Solomon al workspace
-path(path,'../TTSClib_RS')
+path(path,'Library/TTSClib_RS')
 % Añadir el path con la libreria de codificacion convolucional al workspace
-path(path,'../TTSClib_conv')
-% Añadir el path con la librería de la rutina commcnv_plotnextstates para
-% diagrama de trellis
-addpath 'C:\Users\pablo\Documents\MATLAB\Examples\R2019b\comm\CreateUserDefinedTrellisStructureExample'
+path(path,'Library/TTSClib_conv')
 
 % Parametros sistema: 
 % -------------------------------------------------------------------------
@@ -32,7 +29,7 @@ Nbits = 1000*Nutil; % Numero de bits del mensaje (bloque a codificar)
 snrdB = 46.25; %Relacion potencia de señal a potencia de ruido en dB
 M = 4; % Numero de simbolos de la constelacion M-QAM
 
-indicePerforado = 2; % Indice para seleccion del patron de perforado
+indicePerforado = 1; % Indice para seleccion del patron de perforado
 
 codterminado = false; % A true, indica que el codigo es terminado (los 
 % estados de inicio y de fin son conocidos) o si el codigo es continuo. 
@@ -86,9 +83,9 @@ fprintf('%g ', SNRdBb_c)
 
 fprintf('\n')
 
-fprintf('BER palabra-código : %d', bber_c)
+fprintf('BER palabra-código : %d', err_c(1))
 
-fprintf('\nBER mensaje      : %d', bber_m)
+fprintf('\nBER mensaje      : %d', err_m(1))
 
 fprintf('\n\n')
 
@@ -113,8 +110,6 @@ for i=2:10
     err_m_Simb(i)=(err_m_Simb(i-1)+err_m_Simb(i+1))/2;
 end
 
-% err_m_Simb=err_m_Simb*0.75;
-
 figure('Name','BER por símbolo OFDM recibido tras codif')
 plot(err_m_Simb,'Linewidth',1.1), grid on, hold on
 xlabel('Índice de símbolo OFDM recibido'),title('BERc/simbOFDM')
@@ -122,4 +117,3 @@ xlabel('Índice de símbolo OFDM recibido'),title('BERc/simbOFDM')
 figure(1), hold on
 plot(err_m_Simb(1:1e3),'Linewidth',1.1), grid on
 xlabel('Índice de símbolo OFDM recibido'),title('BERc/simbOFDM')
-
